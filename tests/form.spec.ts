@@ -94,8 +94,5 @@ scripts execution using CI/CD pipelines. `);
     await expect(cnfmPswrdFld).toHaveValue('Monou@1998');
     await expect(tnCFld).toBeChecked();
 
-    
-     
-
 
 })
