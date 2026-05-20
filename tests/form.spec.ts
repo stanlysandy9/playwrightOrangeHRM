@@ -60,7 +60,8 @@ const resetBtn=page.getByRole('button', {name: 'Reset'})
     await pneFld.fill('9988776655');
     //await dobfld.click();
     
-    await dobfld.pressSequentially('13051996');
+    await page.locator('#dob').fill('1996-05-13');
+    //await dobfld.pressSequentially('13051996');
     await genderMaleNameFld.click();
     await page.locator('select').selectOption('India');
     await cityNameFld.fill('Hyd');
@@ -92,9 +93,6 @@ scripts execution using CI/CD pipelines. `);
     await expect(pswrdFld).toHaveValue('Monou@1998');
     await expect(cnfmPswrdFld).toHaveValue('Monou@1998');
     await expect(tnCFld).toBeChecked();
-
-    
-     
 
 
 })
