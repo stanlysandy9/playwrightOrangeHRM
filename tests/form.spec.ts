@@ -60,7 +60,8 @@ const resetBtn=page.getByRole('button', {name: 'Reset'})
     await pneFld.fill('9988776655');
     //await dobfld.click();
     
-    await dobfld.pressSequentially('13051996');
+    await page.locator('#dob').fill('1996-05-13');
+    //await dobfld.pressSequentially('13051996');
     await genderMaleNameFld.click();
     await page.locator('select').selectOption('India');
     await cityNameFld.fill('Hyd');
