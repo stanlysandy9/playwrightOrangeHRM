@@ -155,5 +155,5 @@
     await expect(pswrdFld).not.toHaveValue('Monou@1998');
     await expect(cnfmPswrdFld).not.toHaveValue('Monou@1998');
     await expect(tnCFld).not.toBeChecked();
-
+        //Test case completed
     })
